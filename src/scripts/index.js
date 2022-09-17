@@ -3,6 +3,5 @@ async function load() {
     await import('/src/scripts/hamburger.js');
     await import('/src/scripts/scroll.js');
     await import('/src/scripts/search.js');
-    await import('/src/scripts/models.js');
 }
 load()

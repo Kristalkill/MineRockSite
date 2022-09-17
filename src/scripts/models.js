@@ -10,4 +10,4 @@ function update_models() {
     }
 }
 
-export default update_models()
+update_models()
