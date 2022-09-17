@@ -1,7 +1,10 @@
-@use 'css/header.scss';
-@use 'css/page.scss';
-@use 'css/adaptation.scss';
-@import 'css/variables.scss';
+@use 'src/css/header.scss';
+@use 'src/css/page.scss';
+@use 'src/css/adaptation.scss';
+@import 'src/css/variables.scss';
+
+
+
 
 html {
     font-family: "Montserrat", sans-serif;
