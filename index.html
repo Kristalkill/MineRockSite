@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
     <link rel="stylesheet" href="main.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -227,49 +229,13 @@
                 - Ukrainian - German will turn out to be a slave</div>
         </div>
     </div>
-    <script>
-        const models = document.querySelectorAll("model-viewer");
-        for (const model of models) {
-            console.log(model.availableVariants)
-            model.addEventListener('load', () => {
-                const alt = model.getAttribute('alt')
-                model.variantName = alt === 'default' ? null : alt;
-            });
-        }
+    <script src="scripts/hamburger.js">
     </script>
-    <script>
-        const hamburgerButton = document.getElementById('hamburger-button');
-        const headerLinks = document.querySelectorAll('header .container .menu a');
-        headerLinks.forEach((link) => {
-            link.addEventListener('click', (e) => hamburgerButton.checked = false);
-        })
+    <script src="scripts/scroll.js">
     </script>
-    <script>
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > (window.screen.height * 0.70)) {
-                document.querySelector(".container").classList.add("black")
-            } else {
-                document.querySelector(".container").classList.remove("black")
-            }
-        })
+    <script src="scripts/models.js">
     </script>
-    <script>
-        const searchInput = document.getElementById("searchInput");
-        const names = document.getElementsByClassName("player");
-        searchInput.addEventListener("keyup", (event) => {
-            const {
-                value
-            } = event.target;
-            const searchQuery = value.toLowerCase();
-            for (const nameElement of names) {
-                let name = nameElement.textContent.toLowerCase();
-                if (name.includes(searchQuery)) {
-                    nameElement.style.display = "flex";
-                } else {
-                    nameElement.style.display = "none";
-                }
-            }
-        });
+    <script src="scripts/search.js">
     </script>
 </body>
 

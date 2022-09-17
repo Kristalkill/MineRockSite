@@ -1,24 +1,3 @@
-html {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  overflow-x: hidden;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-a.button {
-  padding: 0.5rem 1rem;
-  background: white;
-  color: transparent;
-  text-align: center;
-}
-a.button.primary {
-  background: #36bae6;
-  color: #e0e5eb;
-}
-
 header {
   top: 0;
   height: 100vh;
@@ -388,6 +367,26 @@ header .container .menu div.buttons > * {
     width: max-content;
     padding: 1.25rem 1.5rem;
   }
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+a.button {
+  padding: 0.5rem 1rem;
+  background: white;
+  color: transparent;
+  text-align: center;
+}
+a.button.primary {
+  background: #36bae6;
+  color: #e0e5eb;
 }
 
 /*# sourceMappingURL=main.css.map */
