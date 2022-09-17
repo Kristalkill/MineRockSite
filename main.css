@@ -184,6 +184,85 @@ header .container .menu div.buttons > * {
   margin: 0.5rem;
 }
 
+.page-content {
+  box-sizing: border-box;
+  min-height: 560px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  float: left;
+}
+.page-content h1 {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.page-content h2 {
+  margin-top: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.page-content p {
+  margin-top: 0.75rem;
+  line-break: break-all;
+  line-height: 1.25rem;
+}
+
+.player-container {
+  position: relative;
+  text-align: right;
+  display: inline-block;
+  left: 0;
+}
+
+.player-container h1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-size-adjust: auto;
+  width: 60%;
+}
+
+.model {
+  padding-top: 3rem;
+  width: 50vw;
+  margin: 0;
+  float: right;
+  height: 40vh;
+}
+
+.special {
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-content {
+  width: 90vw;
+}
+
+.player {
+  position: relative;
+  width: 90vw;
+  display: flex;
+  z-index: 0;
+  padding: 0;
+  float: left;
+  width: max-content;
+}
+
+.player:not(.first) {
+  margin-top: 10rem;
+}
+
+.player_about {
+  font-size: 3vh;
+  word-break: normal;
+  width: 45vw;
+  display: inline-block;
+}
+
 @media only screen and (min-width: 1043px) {
   header {
     height: 100vh;
@@ -243,6 +322,32 @@ header .container .menu div.buttons > * {
     text-align: center;
   }
 }
+@media screen and (max-width: 426px) {
+  * {
+    max-width: 100%;
+  }
+  .player {
+    position: relative;
+    width: 90vw;
+    display: inline-block;
+    z-index: 0;
+    padding: 0;
+    width: max-content;
+  }
+  .player:not(.first) {
+    margin-top: 10rem;
+  }
+  .player_about {
+    font-size: 3vh;
+    word-break: normal;
+    width: 100vw;
+  }
+  .model {
+    width: 100vw;
+    display: inline;
+    object-position: center;
+  }
+}
 @media only screen and (min-width: 1040px) {
   header {
     height: 100vh;
@@ -283,89 +388,6 @@ header .container .menu div.buttons > * {
     width: max-content;
     padding: 1.25rem 1.5rem;
   }
-}
-.page-content {
-  box-sizing: border-box;
-  min-height: 560px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem;
-  float: left;
-}
-.page-content h1 {
-  margin-top: 1.5rem;
-  font-size: 3.25rem;
-  font-weight: 300;
-  word-break: break-all;
-}
-.page-content h2 {
-  margin-top: 1.5rem;
-  font-size: 1.75rem;
-  font-weight: 500;
-  word-break: break-all;
-}
-.page-content p {
-  margin-top: 0.75rem;
-  line-height: 1.25rem;
-}
-
-.player-container {
-  position: relative;
-  text-align: right;
-  display: inline-block;
-  left: 0;
-}
-
-.player-container h1 {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-size-adjust: auto;
-  width: 60%;
-}
-
-.model {
-  padding-top: 3rem;
-  width: 50vw;
-  margin: 0;
-  float: right;
-  height: 40vh;
-}
-
-.special {
-  object-fit: cover;
-  object-position: center;
-}
-
-.page-content {
-  width: 90vw;
-}
-
-.player {
-  position: relative;
-  width: 90vw;
-  display: flex;
-  z-index: 0;
-  padding: 0;
-  float: left;
-  width: max-content;
-}
-
-.player:not(.first) {
-  margin-top: 10rem;
-}
-
-:root {
-  --scaling-factor: 1 ;
-}
-
-.player_about {
-  font-size: 3vh;
-  word-break: normal;
-  width: 45vw;
-  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */
