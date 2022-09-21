@@ -1,0 +1,29 @@
+@import "@/assets/variables";
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+
+  text-decoration: none;
+
+  &.button {
+    padding: 0.5rem 1rem;
+
+    background: $color_text;
+
+    color: $color_background;
+    text-align: center;
+
+    &.primary {
+      background: $color_text_alt;
+      color: $color_background_alt;
+    }
+  }
+}
+
